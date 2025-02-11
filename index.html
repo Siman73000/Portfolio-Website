@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQO6Q7fBq4RgxRjv1yTZU6flDbW8xvGzWLUaD8PbRjxr8vHbmuD5VzKjI" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6P/xoF06gaKhTpzpTO5f32BhFhZNRtE7HCI+zA2F0HwKP4zGxYY2PaZ41IhZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap-file.scss">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    </style>
+
+    
+    <figure>
+        <a href="javascript:void(0);" ondblclick="drawBox('mypc.png', 'My Projects')"><img src="mypc.png" alt="My PC" class="styled-image"></a>
+        <figcaption>My Projects</figcaption>
+    </figure>
+
+    <figure2>
+        <a href="javascript:void(0);" ondblclick="drawBox2('network.png', 'Network')"><img src="network.png" alt="Network" class="styled-image"></a>
+        <figcaption>Network</figcaption>
+    </figure2>
+
+    <figure3>
+        <a href="javascript:void(0);" ondblclick="drawBox3('openfolder.png', 'About')"><img src="closedfolder.png" alt="About" class="styled-image"></a>
+        <figcaption>About</figcaption>
+    </figure3>
+
+    <div id="controlPanel" class="control-panel">
+        <div class="emptybox4"></div>
+        <div id="topmargin4" class="control-panel-top-margin">
+            <p4>Control Panel</p4>
+            <!--<button class="minimize">&#128469;</button>-->
+            <button class="closeControlPanel" onclick="closeControlPanel()">&#128473;</button>
+            <img src="openfolder.png" alt="Open Folder4" draggable="false" class="openFolder4">
+            <!--<button class="maximize" onclick="maximize()">&#128470;</button>-->
+        </div>
+        <div id="innerbox4" class="control-panel-inner-box"></div>
+    </div>
+
+    <div id="box3" class="third-hidden-box">
+        <div class="emptybox3"></div>
+        <div class="itemcount3">
+            <p> Objects: 2</p>
+        </div>
+        <div id="topmargin3" class="third-hidden-top-margin">
+            <p3>About</p3>
+            <!--<button class="minimize">&#128469;</button>-->
+            <button class="close3" onclick="closeBox3()">&#128473;</button>
+            <img src="openfolder.png" alt="Open Folder3" draggable="false" class="openFolder3">
+            <!--<button class="maximize" onclick="maximize()">&#128470;</button>-->
+        </div>
+        <div id="innerbox3" class="third-hidden-inner-box">
+            <a href="javascript:void(0);" ondblclick="drawNotePad()"><img src="notepad.png" alt="NotePad" draggable="false" class="othello"></a>
+            <figcaption class="othello-caption">About-me.txt</figcaption>
+        </div>
+    </div>
+
+    <div id="box2" class="second-hidden-box">
+        <div class="emptybox2"></div>
+        <div class="itemcount2">
+            <p> Objects: 1</p>
+        </div>
+        <div id="topmargin2" class="second-hidden-top-margin">
+            <p2>Network</p2>
+            <!--<button class="minimize">&#128469;</button>-->
+            <button class="close2" onclick="closeBox2()">&#128473;</button>
+            <img src="network.png" alt="Open Folder2" draggable="false" class="openFolder2">
+            <!--<button class="maximize" onclick="maximize()">&#128470;</button>-->
+        </div>
+        <div id="innerbox2" class="second-hidden-inner-box"></div>
+    </div>
+
+    <div id="notepad" class="note-pad">
+        <div id="topmargin5" class="note-pad-top-margin">
+            <p6>About-me.txt</p6>
+            <!--<button class="minimize">&#128469;</button>-->
+            <button class="closeNotePad" onclick="closeNotePad()">&#128473;</button>
+            <img src="notepad.png" alt="Open Folder5" draggable="false" class="openFolder5">
+            <!--<button class="maximize" onclick="maximize()">&#128470;</button>-->
+        </div>
+        <div id="innerbox5" class="note-pad-inner-box">
+            <p5>
+                A fitness studio was struggling to attract new members. The owner, Maria, decided to launch a 30-day fitness challenge with a $500 cash prize for the most improved participant. The challenge went viral on social media, generating 500 new leads within the first week. By the end of the month, the studio had gained 150 new members, a 20% increase in revenue, and a revitalized community of fitness enthusiasts.
+            </p5>
+        </div>
+    </div>
+
+    <div id="box" class="hidden-box">
+        <div class="emptybox"></div>
+        <div class="itemcount">
+            <p> Objects: 1</p>
+        </div>
+        <div id="topmargin" class="hidden-top-margin">
+            <p1>My Projects</p1>
+            <!--<button class="minimize">&#128469;</button>-->
+            <button class="close" onclick="closeBox()">&#128473;</button>
+            <img src="mypc.png" alt="Open Folder" draggable="false" class="openFolder">
+            <!--<button class="maximize" onclick="maximize()">&#128470;</button>-->
+        </div>
+        <div id="innerbox" class="hidden-inner-box">
+            <a href="javascript:void(0);" ondblclick="githubRedirect1()"><img src="doomgame.jfif" alt="Doom Game" draggable="false" class="doom-game"></a>
+            <a href="javascript:void(0);" ondblclick="githubRedirect()"><img src="Othello-Logo.png" alt="Othello" draggable="false" class="othello"></a>
+            <figcaption class="othello-caption">Othello OS</figcaption>
+            <figcaption class="doom-game-caption">Pseudo 3D Game</figcaption>
+        </div>
+    </div>
+    <div id="dropdown">
+        <ul class="dropdown-content">
+            <li>
+                <a href='#option1' onclick="drawControlPanel()">Control Panel</a>
+            </li>
+            <li><a href='#option2'>Calculator</a></li>
+        </ul>
+    </div>
+    <div id="startmenu" class="win95">
+        <div id="tandd" class="time-date"></div>
+        <div id="startbutton" class="start-button">
+            <input type="text" id="search" placeholder="Search..." class="search-bar0">
+            <button style="text-align: right; display: flex; justify-content: center;" class="winstart-button" onclick="startMenu()">
+                <img src="WIN95.ico" alt="Start Button" draggable="false" class="win95-start-button">
+                Start
+            </button>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
