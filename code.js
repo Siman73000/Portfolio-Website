@@ -29,6 +29,9 @@ const searchBar = document.getElementById('search');
 const resultsList = document.getElementById('results');
 
 
+function githubRedirect2() {
+    window.open('https://github.com/Siman73000/Real-Time-Hydrodynamics-PFS', '_blank');
+}
 
 function githubRedirect1() {
     window.open('https://github.com/Siman73000/Pseudo3D_Game/tree/main', '_blank');
@@ -189,33 +192,13 @@ document.addEventListener('mousemove', function(e) {
         let newLeft = e.clientX - offsetX;
         let newTop = e.clientY - offsetY;
 
-        /*
-        if (newLeft < 0) newLeft = 0;
-        if (newTop < 0) newTop = 0;
-        if (newLeft + boxWidth > viewportWidth) newLeft = viewportWidth - boxWidth;
-        if (newTop + boxHeight > viewportHeight) newTop = viewportHeight - boxHeight;
-
-        box.style.left = newLeft + 'px';
-        box.style.top = newTop + 'px';
-        */
         newLeft = Math.max(0, Math.min(viewportWidth - boxWidth, newLeft));
         newTop = Math.max(0, Math.min(viewportHeight - boxHeight, newTop));
         box.style.left = newLeft + 'px';
         box.style.top = newTop + 'px';
-        /*if (innerBox) {
-            const innerBoxWidth = innerBox.offsetWidth;
-            const innerBoxHeight = innerBox.offsetHeight;
-            innerBox.style.left = (boxWidth - innerBoxWidth) / 2 + 'px';
-            innerBox.style.top = (boxHeight - innerBoxHeight) / 2 + 'px';
-        }
-        if (topMargin) {
-            const topMarginWidth = topMargin.offsetWidth;
-            const topMarginHeight = topMargin.offsetHeight;
-            topMargin.style.left = (boxWidth - topMarginWidth) / 2 + 'px';
-            topMargin.style.top = (boxHeight - topMarginHeight) / 2 + 'px';
-        }*/
-       box.style.left = x + 'px';
-       box.style.top = y + 'px';
+
+        box.style.left = x + 'px';
+        box.style.top = y + 'px';
     }
 });
 
@@ -593,8 +576,8 @@ document.addEventListener('mousemove', function(e) {
             topMargin5.style.left = (boxWidth5 - topMarginWidth5) / 2 + 'px';
             topMargin5.style.top = (boxHeight5 - topMarginHeight5) / 2 + 'px';
         }
-       notepad.style.left = x + 'px';
-       notepad.style.top = y + 'px';
+        notepad.style.left = x + 'px';
+        notepad.style.top = y + 'px';
     }
 });
 

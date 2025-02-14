@@ -9,6 +9,37 @@ body {
     overflow: hidden;
 }
 
+.pfs {
+    user-select: none;
+    position: absolute;
+    display: flex;
+    left: 65%;
+    height: 25%;
+    width: 25%;
+    image-resolution: from-image;
+    justify-content: center;
+    align-items: center;
+}
+
+.pfs:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    border: #000000;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.pfs-caption {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    color: black;
+    font-family: 'Levi Windows', sans-serif;
+    left: 29%;
+    top: -24%;
+}
+
 .doom-game {
     user-select: none;
     position: absolute;
@@ -102,7 +133,7 @@ figure3 {
     display: flex;
     justify-content: center;
     top: 0;
-    right: 0;
+    left: 0;
     width: 10%;
     height: 100%;
     background-color: #c0c7c8;
@@ -193,7 +224,7 @@ figure3 {
 }
 
 .win95 {
-    border: 4px solid;
+    border: 1px solid;
     border-style: outset;
     position: fixed;
     display: block;
@@ -241,7 +272,7 @@ figure3 {
     display: fixed;
     justify-content: center;
     bottom: 0.5%;
-    left: 8.5%;
+    left: 6%;
     height: 6%;
     overflow: hidden;
     border: 4px;
@@ -406,7 +437,7 @@ figcaption {
     justify-content: center;
     align-items: center;
     width: 485px;
-    height: 320px;
+    height: 420px;
     background-color: #c0c7c8;
     border: 5px solid #c0c7c8;
     border-style: outset;
@@ -422,7 +453,7 @@ figcaption {
     justify-content: center;
     align-items: center;
     width: calc(100% - 10px);
-    height: 80%;
+    height: 90%;
     background-color: #ffffff;
     border-style: inset;
     top: 50%;
@@ -810,7 +841,6 @@ p5 {
     align-items: center;
     align-self: center;
     color: #000000;
-    bottom: 40%;
     user-select: none;
 }
 
